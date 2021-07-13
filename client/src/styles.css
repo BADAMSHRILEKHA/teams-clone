@@ -1,0 +1,27 @@
+body {
+    /*background-image: url("https://st3.depositphotos.com/15827116/i/600/depositphotos_179825936-stock-photo-abstract-pastel-colors-geometrical-background.jpg");*/
+    background-image: url("https://image.freepik.com/free-photo/pack-pastel-cardboard-sheets_23-2148320374.jpg");  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.outer-container {
+    font: 16px sans-serif;
+    background: gold;
+    color: white;
+    height: 200px;
+    display: flex;
+}
+
+ .box {
+    padding: 10px;
+    flex: 1 0 auto;
+ }
+ .larger {
+    background: yellowgreen;
+    flex: 3 0 auto;
+  } 
+
+* {
+    margin: 0;
+    padding: 0;
+};
