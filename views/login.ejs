@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .button {
+          display: inline-block;
+          border-radius: 4px;
+          background-color: #7776b3;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 16px;
+          padding: 12px 20px ;
+          width: 150px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+        
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button:hover span {
+          padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+
+    </style>   
+    <link rel="stylesheet"  href="/css/styles.css" />    
+    
+    <div class="container" onclick="onclick">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="center">
+            <nav>
+                <% if(!isAuthenticated) { %>
+                <h2>Please Sign In Here</h2>
+                <button class="button" onclick="window.location.href='/login/';"><span>LOGIN </span></button>
+                <% } else { %>
+                <% if(user) { %>
+                <div class="profileInfo">
+                <h2><%= "Hi, "+ user.nickname.charAt(0).toUpperCase() + user.nickname.slice(1) %> </h2>
+                </div>
+                <% } %>  
+                <h2>Choose Your Action</h2>   
+                <button class="button" onclick="myFunction()"><span>Video Call </span></button>
+                <script>
+                    function myFunction() {
+                        window.location.replace("http://localhost:3000");
+                    }
+                </script>
+                <button class="button" onclick="window.location.href='/logout/';"><span>LOGOUT</span></button>
+                <% } %>   
+            </nav>
+            <h2>&nbsp;</h2>
+        </div>
+    </div> 
+         
+</html>
