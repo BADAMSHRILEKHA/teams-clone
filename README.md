@@ -44,3 +44,5 @@ Now, split the current terminal in your code editor and run the command “cd cl
 
 ![terminal2](https://user-images.githubusercontent.com/87368752/125442112-f91772c3-8726-4eb9-be22-02ccfcf7b4a8.png)
 
+Now, open a web browser and go to http://localhost:5000 to see your running application
+
