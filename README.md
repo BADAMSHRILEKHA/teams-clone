@@ -21,6 +21,7 @@ https://auth0.com/
 
 and create your account and create a new node.js regular web application
 
+
 ![Screenshot 2021-07-13 164431](https://user-images.githubusercontent.com/87368752/125442692-24c1e183-5d8d-48c6-a5a8-56acbcfe402b.jpg)
 
 you will find your domain url and client ID in this way in settings menu of you auth0 application you created
@@ -28,6 +29,9 @@ you will find your domain url and client ID in this way in settings menu of you 
 Now paste your client ID and domain URL in .env file (in CLIENTID and ISSUER respectively)
 
 Now in Auth0 go to Settings of the application you created => change the callback and logout URL to localhost:5000
+
+![Screenshot 2021-07-13 164911](https://user-images.githubusercontent.com/87368752/125443657-7f07486e-1ab5-4d36-b180-a5bf0960f657.jpg)
+
 
 
 
